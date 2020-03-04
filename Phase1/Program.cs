@@ -154,9 +154,42 @@ namespace Phase1
                 p.Draw();
             }
 
+            List<Polyline> polylines2 = new List<Polyline>();
 
-           
+            polylines2 = polylines.FindAll(X => X.Equals(pl03));
 
+            Console.WriteLine("   ");
+            Console.WriteLine("liste de polyline(s) dont la longueur est acceptablement égale à la longueur de la polyline"+pl03+":");
+            Console.WriteLine("  ");
+
+            foreach (Polyline p in polylines2)
+            {
+                p.Draw();
+            }
+
+            Console.WriteLine("   ");
+            Console.WriteLine("liste de polylines proche du point"+poi2+" :");
+            Console.WriteLine("  ");
+
+            foreach (Polyline p in polylines)
+            {
+                if (p.IsPointClose(poi2.Latitude, poi2.Longitude, 20))
+                {
+                    p.Draw();
+                }
+            }
+
+            MyCartoObjComparer cartocomp = new MyCartoObjComparer();
+            Liste_cartoObjs.Sort(cartocomp);
+
+            Console.WriteLine("   ");
+            Console.WriteLine("liste de CartoObj triées selon le nbre de coordonnées composant chacun des éléments:");
+            Console.WriteLine("  ");
+
+            foreach(CartoObj c in Liste_cartoObjs)
+            {
+                c.Draw();
+            }
 
             Console.ReadKey();
         }

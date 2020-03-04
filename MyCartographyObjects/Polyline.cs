@@ -95,7 +95,7 @@ namespace MyCartographyObjects
 
                 if( i > 0)
                 {
-                    resultat = MathUtil.distance_segments_points(cprec.Latitude,cprec.Longitude,c.Latitude,c.Longitude, Xi, Yi);
+                    resultat = MathUtil.distance_segments_points(cprec.Longitude,cprec.Latitude,c.Longitude,c.Latitude, Xi, Yi);
                     
                     if(resultat <= precision)
                     {
@@ -152,7 +152,7 @@ namespace MyCartographyObjects
 
             foreach(Coordonnees c in Listecoordonnees)
             {
-                longueur = longueur + MathUtil.distance_points(cprec.Latitude, cprec.Longitude, c.Latitude, c.Longitude);
+                longueur = longueur + MathUtil.distance_points(cprec.Longitude, cprec.Latitude, c.Longitude, c.Latitude);
                 cprec.Latitude = c.Latitude;
                 cprec.Longitude = c.Longitude;
             }
@@ -167,10 +167,10 @@ namespace MyCartographyObjects
 
             difference = Math.Abs(Longueur() - other.Longueur());
 
-           /* if(difference <= )
-            {
+           if(difference <= 5.0)
+           {
                 return true;
-            }*/
+           }
            
             return false;
             

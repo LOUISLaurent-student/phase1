@@ -14,28 +14,28 @@ namespace MyCartographyObjects
 
             double X_min = 0, X_max = 0, Y_min, Y_max = 0,largueur = 0 , longueur = 0, sa =0, sb =0;
 
-            X_min = X_max = a.Listecoordonnees.First().Latitude;
-            Y_min = Y_max = a.Listecoordonnees.First().Longitude;
+            X_min = X_max = a.Listecoordonnees.First().Longitude;
+            Y_min = Y_max = a.Listecoordonnees.First().Latitude;
 
             foreach (Coordonnees c in a.Listecoordonnees)
             {
-                if (c.Latitude > X_max)
+                if (c.Longitude > X_max)
                 {
-                    X_max = c.Latitude;
+                    X_max = c.Longitude;
                 }
 
-                if (c.Latitude < X_min)
+                if (c.Longitude < X_min)
                 {
-                    X_min = c.Latitude;
+                    X_min = c.Longitude;
                 }
 
-                if (c.Longitude > Y_max)
+                if (c.Latitude > Y_max)
                 {
-                    Y_max = c.Longitude;
+                    Y_max = c.Latitude;
                 }
-                if (c.Longitude < Y_min)
+                if (c.Latitude < Y_min)
                 {
-                    Y_min = c.Longitude;
+                    Y_min = c.Latitude;
                 }
             }
 
@@ -45,28 +45,28 @@ namespace MyCartographyObjects
 
             sa = largueur * longueur;
 
-            X_min = X_max = b.Listecoordonnees.First().Latitude;
-            Y_min = Y_max = b.Listecoordonnees.First().Longitude;
+            X_min = X_max = b.Listecoordonnees.First().Longitude;
+            Y_min = Y_max = b.Listecoordonnees.First().Latitude;
 
             foreach (Coordonnees c in b.Listecoordonnees)
             {
-                if (c.Latitude > X_max)
+                if (c.Longitude > X_max)
                 {
-                    X_max = c.Latitude;
+                    X_max = c.Longitude;
                 }
 
-                if (c.Latitude < X_min)
+                if (c.Longitude < X_min)
                 {
-                    X_min = c.Latitude;
+                    X_min = c.Longitude;
                 }
 
-                if (c.Longitude > Y_max)
+                if (c.Latitude > Y_max)
                 {
-                    Y_max = c.Longitude;
+                    Y_max = c.Latitude;
                 }
-                if (c.Longitude < Y_min)
+                if (c.Latitude < Y_min)
                 {
-                    Y_min = c.Longitude;
+                    Y_min = c.Latitude;
                 }
             }
 

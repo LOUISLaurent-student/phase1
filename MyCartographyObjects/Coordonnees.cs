@@ -47,7 +47,7 @@ namespace MyCartographyObjects
            
             double test = 0;
 
-            test = MathUtil.distance_points(Latitude,Longitude, Xi, Yi);
+            test = MathUtil.distance_points(Longitude,Latitude, Xi, Yi);
 
             if ( test <= precision)
             {
