@@ -90,30 +90,30 @@ namespace Phase1
             List<Polyline> polylines = new List<Polyline>();
 
             Polyline pl01 = new Polyline(Colors.Blue,10);
-            pl01.Add(new Coordonnees(5.5, 7.3));
-            pl01.Add(new Coordonnees(4.6, 1.9));
-            pl01.Add(new Coordonnees(8.2, 2.8));
-            pl01.Add(new Coordonnees(3.7, 6.4));
+            pl01.Add(new Coordonnees(1.0,2.3));
+            pl01.Add(new Coordonnees(4.5,6.7));
+            pl01.Add(new Coordonnees(8.9,10.0));
+            pl01.Add(new Coordonnees(11.12,13.14));
             Polyline pl02 = new Polyline(Colors.Red,20);
-            pl02.Add(new Coordonnees(90.1,9.2));
-            pl02.Add(new Coordonnees(18.3,36.4));
-            pl02.Add(new Coordonnees(72.5,63.6));
-            pl02.Add(new Coordonnees(54.7,45.8));
+            pl02.Add(new Coordonnees(5.0,10.15));
+            pl02.Add(new Coordonnees(20.25,30.35));
+            pl02.Add(new Coordonnees(40.45,50.55));
+            pl02.Add(new Coordonnees(60.65,70.75));
             Polyline pl03 = new Polyline(Colors.Yellow,30);
-            pl03.Add(new Coordonnees(3.8,27.7));
-            pl03.Add(new Coordonnees(18.6,21.5));
-            pl03.Add(new Coordonnees(12.4,24.3));
-            pl03.Add(new Coordonnees(6.2,15.1));
+            pl03.Add(new Coordonnees(2.4, 6.8));
+            pl03.Add(new Coordonnees(10.12,14.16));
+            pl03.Add(new Coordonnees(16.18,20.22));
+            pl03.Add(new Coordonnees(24.26,28.30));
             Polyline pl04 = new Polyline(Colors.White,40);
-            pl04.Add(new Coordonnees(10.5, 5.10));
-            pl04.Add(new Coordonnees(15.5, 25.45));
-            pl04.Add(new Coordonnees(35.10, 45.15));
-            pl04.Add(new Coordonnees(20.50, 50.25));
+            pl04.Add(new Coordonnees(3.6,9.12));
+            pl04.Add(new Coordonnees(15.18,21.24));
+            pl04.Add(new Coordonnees(27.30,33.36));
+            pl04.Add(new Coordonnees(39.42,45.48));
             Polyline pl05 = new Polyline(Colors.Black,50);
-            pl05.Add(new Coordonnees(1.2, 3.4));
-            pl05.Add(new Coordonnees(5.6, 7.8));
-            pl05.Add(new Coordonnees(9.10, 10.9));
-            pl05.Add(new Coordonnees(2.4, 8.16));
+            pl05.Add(new Coordonnees(4.8,12.16));
+            pl05.Add(new Coordonnees(20.24,28.32));
+            pl05.Add(new Coordonnees(36.40,44.48));
+            pl05.Add(new Coordonnees(52.56,60.64));
 
             polylines.Add(pl01);
             polylines.Add(pl02);
@@ -159,7 +159,7 @@ namespace Phase1
             polylines2 = polylines.FindAll(X => X.Equals(pl03));
 
             Console.WriteLine("   ");
-            Console.WriteLine("liste de polyline(s) dont la longueur est acceptablement égale à la longueur de la polyline"+pl03+":");
+            Console.WriteLine("liste de polyline(s) dont la longueur est acceptablement égale à la longueur de la polyline => "+pl03+":");
             Console.WriteLine("  ");
 
             foreach (Polyline p in polylines2)
@@ -168,12 +168,12 @@ namespace Phase1
             }
 
             Console.WriteLine("   ");
-            Console.WriteLine("liste de polylines proche du point"+poi2+" :");
+            Console.WriteLine("liste de polylines proche du point => "+poi2+" :");
             Console.WriteLine("  ");
 
             foreach (Polyline p in polylines)
             {
-                if (p.IsPointClose(poi2.Latitude, poi2.Longitude, 20))
+                if (p.IsPointClose(poi2.Latitude, poi2.Longitude,5))
                 {
                     p.Draw();
                 }

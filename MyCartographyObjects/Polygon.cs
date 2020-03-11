@@ -129,21 +129,25 @@ namespace MyCartographyObjects
             {
                 int i = 0, idi = 0;
 
-                idi = Listecoordonnees.First().Id;
 
-
-                foreach (Coordonnees c in Listecoordonnees)
+                if (Listecoordonnees.Count() > 0)
                 {
+                    i=1;
+                    idi = Listecoordonnees.First().Id;
 
-
-                    if (idi == c.Id)
+                    foreach (Coordonnees c in Listecoordonnees)
                     {
-                        i++;
+
+
+                        if (idi != c.Id)
+                        {
+                            i++;
+                        }
+
+                        idi = c.Id;
+
+
                     }
-
-                    idi = c.Id;
-
-
                 }
 
                 return i;

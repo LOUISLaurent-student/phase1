@@ -1,0 +1,9 @@
+C:\Users\laurent\source\repos\Phase1\MyCartographyObjects\bin\Debug\MyCartographyObjects.dll
+C:\Users\laurent\source\repos\Phase1\MyCartographyObjects\bin\Debug\MyCartographyObjects.pdb
+C:\Users\laurent\source\repos\Phase1\MyCartographyObjects\bin\Debug\MathUtil.dll
+C:\Users\laurent\source\repos\Phase1\MyCartographyObjects\bin\Debug\MathUtil.pdb
+C:\Users\laurent\source\repos\Phase1\MyCartographyObjects\obj\Debug\MyCartographyObjects.csprojAssemblyReference.cache
+C:\Users\laurent\source\repos\Phase1\MyCartographyObjects\obj\Debug\MyCartographyObjects.csproj.CoreCompileInputs.cache
+C:\Users\laurent\source\repos\Phase1\MyCartographyObjects\obj\Debug\MyCartographyObjects.csproj.CopyComplete
+C:\Users\laurent\source\repos\Phase1\MyCartographyObjects\obj\Debug\MyCartographyObjects.dll
+C:\Users\laurent\source\repos\Phase1\MyCartographyObjects\obj\Debug\MyCartographyObjects.pdb

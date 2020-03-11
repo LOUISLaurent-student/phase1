@@ -1,0 +1,5 @@
+C:\Users\laurent\source\repos\Phase1\MathUtil\bin\Debug\MathUtil.dll
+C:\Users\laurent\source\repos\Phase1\MathUtil\bin\Debug\MathUtil.pdb
+C:\Users\laurent\source\repos\Phase1\MathUtil\obj\Debug\mathutil.csproj.CoreCompileInputs.cache
+C:\Users\laurent\source\repos\Phase1\MathUtil\obj\Debug\MathUtil.dll
+C:\Users\laurent\source\repos\Phase1\MathUtil\obj\Debug\MathUtil.pdb

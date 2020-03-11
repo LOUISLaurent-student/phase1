@@ -64,7 +64,7 @@ namespace MyCartographyObjects
         }
         public override string ToString()
         {
-            string tempo = base.ToString() + " epaisseur:"+Epaisseur + " couleur:"+Couleur;
+            string tempo = base.ToString() + " epaisseur:"+Epaisseur + " couleur:"+Couleur+" longueur: "+Longueur();
 
             foreach (Coordonnees c in Listecoordonnees)
             {
@@ -119,22 +119,27 @@ namespace MyCartographyObjects
             get {
                     int i = 0,idi = 0;
 
+
+                if (Listecoordonnees.Count() > 0)
+                {
+                    i = 1;
                     idi = Listecoordonnees.First().Id;
 
 
                     foreach (Coordonnees c in Listecoordonnees)
                     {
-                    
-                    
-                        if( idi == c.Id)
+
+
+                        if (idi != c.Id)
                         {
                             i++;
                         }
-                    
+
                         idi = c.Id;
-                    
+
 
                     }
+                }
 
                     return i;
                 }
